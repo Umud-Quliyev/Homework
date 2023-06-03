@@ -188,6 +188,7 @@ section .container-services .service-title h1 {
 }
 section .container-services .services {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 section .container-services .services img {
@@ -224,6 +225,7 @@ section .container-services .services .automotive .tab-title i {
 }
 section .about {
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
   padding: 0 0 200px;
@@ -309,11 +311,9 @@ section .problems .b-images img {
 }
 section .licance {
   display: flex;
-  justify-content: space-between;
-  padding-top: 150px;
   padding-left: 80px;
   padding-right: 80px;
-  padding-bottom: 200px;
+  padding: 250px 80px 200px 80px;
 }
 section .licance .l-title h2 {
   font-size: 16px;
@@ -340,16 +340,183 @@ section .licance .l-about .about-right {
 }
 section .licance .l-about .about-right .about-right-title {
   display: flex;
+  flex-wrap: wrap;
+}
+section .licance .l-about .about-right .about-right-title h2 {
+  margin-left: 20px;
 }
 section .licance .l-about .about-left .about-left-title {
   display: flex;
+  flex-wrap: wrap;
+}
+section .licance .l-about .about-left .about-left-title h2 {
+  margin-left: 20px;
 }
 section .customer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right: 100px;
   background-image: radial-gradient(at top center, #4a4f5d 0%, #2b2e37 100%);
+}
+section .customer .card-background {
+  background-color: #ee6c4e;
+  padding: 45px 50px 40px;
+}
+section .customer .card {
+  margin: -60px 0 0;
+  width: 33.3%;
+  padding-bottom: 20px;
+}
+section .customer .card .incard .card-title {
+  display: flex;
+  justify-content: space-between;
+}
+section .customer .card .incard .card-title .stars {
+  display: flex;
+}
+section .customer .card .incard .card-title .stars i {
+  color: #fd0;
+}
+section .customer .card .incard .card-title .stars .-star i {
+  color: rgba(255, 221, 0, 0.4784313725);
+}
+section .customer .card .incard .card-title h2 {
+  font-size: 120px;
+  color: white;
+  font-weight: 400;
+  font-family: "Staatliches", display;
+  line-height: 0.9em;
+}
+section .customer .card .incard .card-desc p {
+  padding-top: 90px;
+  font-weight: 700;
+  color: white;
+}
+section .customer .customer-desc {
+  padding: 185px 0 150px 100px;
+}
+section .customer .customer-desc .cd-title h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Staatliches", display;
+  padding-bottom: 30px;
+}
+section .customer .customer-desc .personels {
+  width: 66.6%;
+}
+section .customer .customer-desc .personels p {
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+}
+section .customer .customer-desc .personels h2 {
+  color: white;
+}
+section .customer .customer-desc .personels img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60px;
+  height: 60px;
+  padding-right: 15px;
+}
+section .customer .customer-desc .personels .p-images {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+section .customer .customer-desc .personels .personel1 {
+  border-bottom: rgba(255, 255, 255, 0.1215686275) 1px solid;
+  border-top: rgba(255, 255, 255, 0.1215686275) 1px solid;
 }
 
 @media (max-width: 767px) {
   section .container-services .service-title h1 {
     font-size: 35px;
+  }
+  section .about {
+    padding-bottom: 50px;
+    padding-left: 20px;
+  }
+  section .about .about-title {
+    padding: 75px 0;
+    width: 100%;
+  }
+  section .about .about-title h1 {
+    font-size: 35px;
+  }
+  section .problems {
+    padding-left: 20px;
+  }
+  section .problems .p-title {
+    padding: 0;
+  }
+  section .problems .p-title h1 {
+    font-size: 35px;
+    padding-bottom: 50px;
+  }
+  section .problems .b-images img {
+    height: auto;
+    max-width: 100%;
+  }
+  section .problems .blog {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  section .problems .blog .b-title {
+    width: 100%;
+  }
+  section .problems .blog .b-title h1 {
+    font-size: 28px;
+    padding-bottom: 50px;
+  }
+  section .problems .blog .b-desc {
+    width: 100%;
+  }
+  section .blog .b-title {
+    width: auto;
+  }
+  section .blog .b-title h1 {
+    font-size: 28px;
+  }
+  section .licance {
+    flex-wrap: wrap;
+    padding: 0;
+    padding-bottom: 200px;
+  }
+  section .licance .l-title {
+    padding: 75px 20px 35px;
+  }
+  section .licance .l-title h1 {
+    font-size: 28px;
+  }
+  section .licance .l-about {
+    flex-wrap: wrap;
+  }
+  section .licance .l-about p {
+    padding-left: 20px;
+  }
+  section .licance .l-about i {
+    padding-left: 20px;
+  }
+  section .licance .l-about .about-right .about-right-title {
+    flex-direction: column;
+  }
+  section .licance .l-about .about-left .about-left-title {
+    flex-direction: column;
+  }
+  section .customer {
+    padding: 0;
+  }
+  section .customer .card {
+    width: 100%;
+  }
+  section .customer .customer-desc {
+    padding: 0;
+    padding-top: 75px;
+    padding-left: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
