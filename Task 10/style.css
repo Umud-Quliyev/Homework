@@ -354,7 +354,6 @@ section .licance .l-about .about-left .about-left-title h2 {
 }
 section .customer {
   display: flex;
-  flex-wrap: wrap;
   padding-left: 100px;
   padding-right: 100px;
   background-image: radial-gradient(at top center, #4a4f5d 0%, #2b2e37 100%);
