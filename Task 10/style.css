@@ -508,6 +508,7 @@ section .customer .customer-desc .personels .personel1 {
     flex-direction: column;
   }
   section .customer {
+    flex-wrap: wrap;
     padding: 0;
   }
   section .customer .card {
