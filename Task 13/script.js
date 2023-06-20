@@ -36,23 +36,23 @@
 
 
 // Task 5
-let number = prompt("Reqem daxil edin")
+// let number = prompt("Reqem daxil edin")
 
-if(number < 50) {
-    console.log("E grade")
-} else if(number < 60) {
-    console.log("D grade")
-} else if(number < 70) {
-    console.log("C grade")
-} else if(number < 80) {
-    console.log("B grade")
-} else if(number < 90) {
-    console.log("A grade")
-} else if(number <= 100) {
-    console.log("S grade")
-} else {
-    console.log("error")
-}
+// if(number < 50) {
+//     console.log("E grade")
+// } else if(number < 60) {
+//     console.log("D grade")
+// } else if(number < 70) {
+//     console.log("C grade")
+// } else if(number < 80) {
+//     console.log("B grade")
+// } else if(number < 90) {
+//     console.log("A grade")
+// } else if(number <= 100) {
+//     console.log("S grade")
+// } else {
+//     console.log("error")
+// }
 
 
 
