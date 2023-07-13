@@ -9,7 +9,7 @@ header {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 700px;
+  height: 900px;
 }
 header .h-background {
   background-color: #1F1F1F;
@@ -40,24 +40,22 @@ header nav h3 {
   border-bottom: 3px solid #615CFD;
 }
 
-.h-section {
-  max-width: 100%;
+.h-slider {
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
-  align-items: center;
   text-align: left;
-}
-.h-section .h-slider {
+  max-width: 47%;
+  margin-left: 250px;
   padding-left: 15px;
 }
-.h-section h1 {
+.h-slider h1 {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
-  width: 76%;
-  font-size: 78px;
+  font-size: 60px;
 }
-.h-section button {
+.h-slider button {
   background-color: #615CFD;
   padding: 12px 33px;
   border: none;
@@ -130,17 +128,21 @@ section .about {
   display: flex;
   background-color: #1F1F1F;
   position: relative;
+  align-items: center;
 }
 section .about .a-background img {
   background-position: center;
   background-size: cover;
   height: 100%;
-  max-width: 50%;
+  max-width: 100%;
 }
 section .about .a-title {
   color: white;
   max-width: 41.666667%;
   margin-left: 8.333333%;
+}
+section .about .a-title h2 {
+  font-size: 14px;
 }
 section .about .a-title button {
   background-color: #615CFD;
@@ -177,17 +179,17 @@ section .portfolio .p-images .top-image {
   margin-bottom: 30px;
 }
 section .portfolio .p-images .thumb {
-  height: 350px;
   border-radius: 5px;
 }
 section .works {
   display: flex;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
 }
 section .works .w-title {
+  position: relative;
+  left: 7%;
   margin: auto;
-  width: 50%;
+  width: 25%;
 }
 section .works .w-title h1 {
   font-size: 40px;
@@ -215,11 +217,13 @@ section .works .w-title .w-btn button {
   color: white;
 }
 section .works .w-images img {
-  width: 100%;
+  max-width: 75%;
+  left: 25%;
   margin: auto;
   background-size: cover;
   background-position: center center;
   border-radius: 20px 0 0 20px;
+  position: relative;
 }
 section .team {
   display: flex;
@@ -245,6 +249,36 @@ section .team .t-images {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+section .team .t-images .team1 {
+  transform: translateY(0px);
+  opacity: 1;
+}
+section .team .t-images .t-images-hover {
+  position: absolute;
+  left: 20px;
+  right: 0;
+  margin: auto;
+  bottom: 90px;
+}
+section .team .t-images ul {
+  list-style: none;
+  display: flex;
+}
+section .team .t-images ul li {
+  margin: 0 4px;
+}
+section .team .t-images ul li i {
+  text-decoration: none;
+  color: white;
+  background-color: #615CFD;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 37px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #615CFD;
 }
 section .team .t-images h1 {
   font-size: 20px;
@@ -318,7 +352,6 @@ section .form .inputs .top-inputs {
   width: 100%;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
 }
 section .form .inputs .top-inputs .t-input {
   width: 100%;
@@ -407,21 +440,23 @@ footer .f-copy a {
   header {
     height: 500px;
   }
-  header nav {
+  header .h-background nav {
     display: block;
     padding: 10px 10px;
   }
-  header nav ul {
+  header .h-background nav ul {
     display: none;
   }
-  header nav h3 {
+  header .h-background nav h3 {
     display: none;
   }
-  header .h-section .h-slider {
+  header .h-background .h-slider {
     text-align: left;
     padding-top: 60px;
+    margin: 0px;
+    max-width: 100%;
   }
-  header .h-section .h-slider h1 {
+  header .h-background .h-slider h1 {
     width: 90%;
     font-size: 30px;
     margin-bottom: 54px;
@@ -486,6 +521,8 @@ footer .f-copy a {
   }
   section .works .w-title {
     width: 100%;
+    left: 0;
+    padding-left: 15px;
   }
   section .works .w-images {
     display: none;

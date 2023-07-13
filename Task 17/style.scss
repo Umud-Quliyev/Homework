@@ -9,7 +9,7 @@ header {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 900px;
 
     .h-background {
         background-color: #1F1F1F;
@@ -46,23 +46,21 @@ header {
     }
 }
 
-.h-section {
-    max-width: 100%;
+.h-slider {
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: center;
     text-align: left;
+    max-width: 47%;
+    margin-left: 250px;
+    padding-left: 15px;
 
-    .h-slider {
-        padding-left: 15px;
-    }
     
     h1 {
         color: white;
         font-family: "Roboto", sans-serif;
         font-weight: 800;
-        width: 76%;
-        font-size: 78px;
+        font-size: 60px;
     }
 
     button {
@@ -151,9 +149,10 @@ section {
             }
         }
         .about {
-            display: flex;            
+            display: flex;          
             background-color: #1F1F1F;
             position: relative;
+            align-items: center;
 
 
             .a-background {
@@ -161,13 +160,17 @@ section {
                     background-position: center;
                     background-size: cover;
                     height: 100%;
-                    max-width: 50%;
+                    max-width: 100%;
                 }
             }
             .a-title {
                 color: white;
                 max-width: 41.666667%;
                 margin-left: 8.333333%;
+                
+                h2 {
+                    font-size: 14px;
+                }
 
                 button {
                     background-color: #615CFD;
@@ -211,20 +214,20 @@ section {
                 }
 
                 .thumb {
-                    height: 350px;
                     border-radius: 5px;
                 }
             }
         }
         .works {
             display: flex;
-            width: 90%;
-            margin: 0 auto;
+            width: 100%;
             
 
             .w-title {
+                position: relative;
+                left: 7%;
                 margin: auto;
-                width: 50%;
+                width: 25%;
                 
                 h1 {
                     font-size: 40px;
@@ -258,11 +261,13 @@ section {
 
             .w-images {
                 img {
-                    width: 100%;
+                    max-width: 75%;
+                    left: 25%;
                     margin: auto;
                     background-size: cover;
                     background-position: center center;
-                    border-radius: 20px 0 0 20px
+                    border-radius: 20px 0 0 20px;
+                    position: relative;
                 }
             }
         }
@@ -290,6 +295,39 @@ section {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+
+                .team1 {
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+
+                .t-images-hover{
+                    position: absolute;
+                    left: 20px;
+                    right: 0;
+                    margin: auto;
+                    bottom: 90px;
+                }
+            
+                ul {
+                    list-style: none;
+                    display: flex;
+                    li {
+                        margin: 0 4px;
+                        i {
+                            text-decoration: none;
+                            color: white;
+                            background-color: #615CFD;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            line-height: 37px;
+                            text-align: center;
+                            font-size: 14px;
+                            border: 1px solid #615CFD;
+                        }
+                    }
+                }
 
                 h1 {
                     font-size: 20px;
@@ -380,7 +418,7 @@ section {
                     width: 100%;
                     margin: auto;
                     display: flex;
-                    flex-wrap: wrap;
+                    
 
                     .t-input {
                         width: 100%;
@@ -487,22 +525,22 @@ section {
 @media (max-width: 767px) {
     header {
         height: 500px;
-        
-
-        nav {
-            display: block;
-            padding: 10px 10px;
-            ul {
-                display: none;
+        .h-background {
+            nav {
+                display: block;
+                padding: 10px 10px;
+                ul {
+                    display: none;
+                }
+                h3 {
+                    display: none;
+                }
             }
-            h3 {
-                display: none;
-            }
-        }
-        .h-section {
             .h-slider {
                 text-align: left;
                 padding-top: 60px;
+                margin: 0px;
+                max-width: 100%;
                 h1 {
                     width: 90%;
                     font-size: 30px;
@@ -591,6 +629,8 @@ section {
 
             .w-title {
                 width: 100%;
+                left: 0;
+                padding-left: 15px;
             }
 
             .w-images {
@@ -611,6 +651,7 @@ section {
             .inputs {
                 width: 100%;
                 margin: auto;
+                
             }
         }
     }
